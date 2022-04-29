@@ -1,31 +1,28 @@
 # CMPSC 302 Project Description
 
-Please fill out the areas below.
+Card Link Game
 
 ## Description
 
-`TODO: Provide a brief description of the project you're extending or attempting`
-
+Have you ever play this game before? Multiple cards place on the table with back on. You need to match the cards with the same graphs in limited chances. I want to mimic this game. When players click one card, then image shows up. The two cards shared the same image which are selected by users will disappear. Then players will get points. In the whole game, the chances users can flip cards are limited.
 ## Areas of development
 
 ```
-TODO: Write a short paragraph (or two) detailing the areas of the project that you:
 
-* Know well
-* Need to develop more competency/skills in
-* Would like to learn if new to you (i.e. we haven't covered them directly in class)
+
+* Know well: How to count down time. How to select cards. How to get points. How to check if user selects the correct pairs
+* How to shuffle the cards for a new game.
+* If possible, I want to the process of fliping card is dynamic. So I want to add animation
 ```
 
 ## Challenges
 
 ```
-TODO: Detail at least three major challenges that you believe you will encouter
-in the process of implementing this project
+How to randomly locate the cards. How to startup and make sure the cards' locations are not the same with the last match. If possible, I also want to create a rank list for all clients who played this game, which means I need a server. This is my advanced ambition
 ```
 
 ## Ideal outcome
 
 ```
-TODO: Detail what a completely successful outcome for this project might look like --
-what would make completing this project worth it?
+User can smoothly play this game. This game can be simple, but there should be no bug.
 ```
