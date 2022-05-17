@@ -1,3 +1,28 @@
 html {
+    background-color: white;
+}
 
+button{
+height: 20vh;
+width: 15vh;
+}
+#gridContainer{
+    position: relative;
+    display: grid;
+    gap: 10vh;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    width: 50%;
+    height: 50%;
+    left: 25%;
+}
+.gridItem{
+    position: relative;
+    height: 20vh;
+    width: 15vh;
+    left: 10vh;
+}
+.gameButton{
+    position: relative;
+    left: 8vh;
 }
