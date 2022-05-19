@@ -9,11 +9,11 @@ The Javascript just get started. Right now the projects has the ability to have 
 
 ## What areas are still challenging? What are some unforeseen issues that have arisen?
 
-One of biggest problems I am struggling to is the match. To set up this game, I need to randomly target 5 pictures, match them with the buttons and then create the correct pictures in the correct button.
+One of biggest problems I am struggling to is the match. To set up this game, I need to randomly target 5 pictures, match them with the buttons and then create the correct pictures in the correct button. 
 
 ## Detail one success that you've achieved.
 
-I feel I did a good job on the index html. This layout is reasonable. The grid did make the game look better. Also, I am proud of myself adding the hidden disabled button in the appropriate places to construct multiple layers of pages.
+I feel I did a good job on the index html. This layout is reasonable. The grid did make the game look better. Also, I am proud of myself adding the hidden disabled button in the appropriate places to construct multiple layers of pages. Also, the image can be added correctly above the buttons as a child of it. So that I have ability to put the images and buttons in just one div, which will simplify my work on Javascript.
 
 ## In what, if any, areas would you like additional assistance?
 

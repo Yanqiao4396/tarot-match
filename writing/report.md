@@ -16,10 +16,14 @@ Reflect on the codes, I believe my strength and knowledge can expose in the sett
 
 ## How does completing this project further your professional or academic goals?
 
-`TODO: Respond to above prompt.`
+This project proved the fact that I do have ability to create a playable game with Javascript, CSS and html. Now I can know that I have the ability to apply the knowledge learned from Computer Science 302. Funny thing is that I didn't expect to have a usable project when I registered this class.
 
 ## From the syllabus, choose at least `2` learning objectives you achieved, and describe how below.
 
-`TODO: Learning objective 1`
+Use and develop APIs (application programmer interfaces
 
-`TODO: Learning objective 2`
+My project is functioned based and there are two main functions triggered by different buttons which are the setup and game play. The interface like inputs and outputs are used throughout the whole Javascript
+
+Express basic fluency in HTML5, CSS, Javascript, and nodeJS markup/programming languages
+
+This game is written in the Js, html and CSS. None of them is avoidable for the success of this game.
