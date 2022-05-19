@@ -5,7 +5,7 @@ var positions = ["1","2","3","4","5","6","7","8","9"]
 // (image, position) pairs
 var cardPstionPair = []
 var tracker = 4
-var chance = 8;
+var chance = 7;
 var time = 40
 var startBtn = document.getElementById("startBtn");
 var gameBtn = document.querySelectorAll(".gameButton")
@@ -22,7 +22,7 @@ gameBtn.forEach(
                         compare()
                     }
                 },500)
-                chanceCheck()
+
             }
         )
     }
@@ -35,7 +35,7 @@ startBtn.addEventListener(
         const countDown = setInterval (()=>{
             time --
             document.getElementById("time").innerText=`Time left: ${time}`
-            if (tracker <= 1){
+            if (tracker < 1){
                 victory()
                 clearInterval(countDown)
             }
@@ -55,8 +55,8 @@ function setUp(){
 }
 const chooseIndex = () => {
     let index = Math.floor(Math.random() * deck.length);
-    deck.splice(index, 1);
-    return index.toString();
+    let card = deck.splice(index, 1);
+    return card.toString();
   }
   
   // Draw; we agree that index 0-3 are pairs, 4 is single
@@ -74,31 +74,15 @@ const chooseIndex = () => {
     uniqueDraws = shuffle(uniqueDraws);
     console.log(uniqueDraws)
   }
-// function setPair(targets){
-//     // Shuffle positionId
-//     pstionId = shuffle(pstionId)
-//     for (let step = 0; step < 5; step ++)
-//     {    
-//         if(pstionId.length > 1){
-//             cardPstionPair.push([targets[step],pstionId.pop()])
-//             cardPstionPair.push([targets[step],pstionId.pop()])
-//     }
-//     else{
-//         cardPstionPair.push([targets[step],pstionId.pop()])
-//     };
-//     console.log(cardPstionPair)
-// }
-// }
 function drawImag(){
     for ( let i =0; i < uniqueDraws.length; i++){
-        console.log(typeof(uniqueDraws[i]))
         let elem = document.getElementById(positions[i])
         let imag = document.createElement("img")
         imag.setAttribute("src",`image/${uniqueDraws[i]}.jpg`)
         imag.setAttribute("alt",`tarot`)
-        imag.setAttribute("id",`${uniqueDraws[i]}`)
+        imag.setAttribute("id",`card-${uniqueDraws[i]}`)
         imag.setAttribute("style","position:relative ;height: 20vh; width: 15vh; left:-1vh;")
-        // imag.setAttribute("hidden","true")
+        imag.setAttribute("hidden","true")
         elem.append(imag)
     }
 
@@ -141,18 +125,18 @@ function compare (){
         imagTwo[0].setAttribute("hidden","true")
 
     }
-    else if(userChoices[0][0] == userChoices[1][0]&&
-        userChoices[0][1] != userChoices[1][1]
-        ){
+    else{
         tracker --
     }
+    console.log(tracker)
     userChoices = []
     chance --
+    chanceCheck()
     document.getElementById("chance").innerText = `Chance left: ${chance}`
 }
 
 function chanceCheck(){
- if(chance < 1){
+ if(chance < 1 && tracker > 0){
 defeated()
  }
 }
@@ -174,5 +158,4 @@ function victory(){
     )
     document.getElementById("victory").removeAttribute("hidden")
 }
-
 
