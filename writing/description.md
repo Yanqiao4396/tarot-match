@@ -14,8 +14,8 @@ Have you ever play this game before? Multiple cards place on the table with back
 
 ## Challenges
 
-How to randomly locate the cards. How to startup and make sure the cards' locations are not the same with the last match. If possible, I also want to create a rank list for all clients who played this game, which means I need a server. This is my advanced ambition
+How to randomly locate the cards. How to startup and make sure the cards' locations are not the same with the last match. If possible, I also want to create a rank list for all clients who played this game, which means I need a server. This is my advanced ambition.
 
 ## Ideal outcome
 
-User can smoothly play this game. This game can be simple, but there should be no bug.
+User can smoothly play this game. This game can be simple, but there should be no bug. The buttons are working as expected. Show up and disappear.
