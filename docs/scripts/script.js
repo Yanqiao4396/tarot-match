@@ -6,7 +6,7 @@ var positions = ["1","2","3","4","5","6","7","8","9"]
 var cardPstionPair = []
 var tracker = 4
 var chance = 7;
-var time = 40
+var time = 20
 var startBtn = document.getElementById("startBtn");
 var gameBtn = document.querySelectorAll(".gameButton")
 
