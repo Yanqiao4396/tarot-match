@@ -1,4 +1,4 @@
-# CMPSC 302 Project Description
+# Description
 
 Card Link Game
 
