@@ -1,7 +1,10 @@
 html {
     background-color: white;
+    color: white;
 }
-
+body{
+    background-image: url('../image/background.jpg');
+}
 button{
 height: 20vh;
 width: 15vh;
@@ -16,6 +19,28 @@ width: 15vh;
     height: 50%;
     left: 25%;
 }
+
+#Instruction{
+    top: 25vh;
+    width:  50vh;
+    font-family: fantasy;
+    -webkit-text-stroke: 1px white;
+    font-size: 10pt;
+    text-align: center;
+    position: absolute;
+    padding: 5vh 5vh;
+}
+
+#startBtn{
+    border-radius: 50%;
+    width: 12vh;
+    height: 12vh;
+    font-size: 10pt;
+    background-color: rgb(13, 20, 119);
+}
+#databoard, #victory, #defeated{
+    font-size: 20pt;
+}
 .gridItem{
     position: relative;
     height: 20vh;
@@ -25,4 +50,8 @@ width: 15vh;
 .gameButton{
     position: relative;
     left: 8vh;
+    background-image: url("../image/Card_back.jpg");
+    background-size: 18vh;
+    background-position: center;
 }
+
