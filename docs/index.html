@@ -4,6 +4,7 @@
 <head>
   <title>Card Flip game</title>
   <link href="style/style.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f281c48caa.js" crossorigin="anonymous"></script>
 </head>
 
   <body>
@@ -12,7 +13,9 @@
         limited chances and time.</p>
       <button id="startBtn" type="button">start</button>
     </div>
-    <mains>
+    <button class="fab fa-github" id="Github" onclick="location.href='https://github.com/Yanqiao4396/tarot-match'" type="button" style="font-size:24px; color: white;"></button>
+
+    <main>
       <div id="gridContainer">
         <div class="gridItem">
           <button id="1" class="gameButton">
@@ -61,6 +64,7 @@
         </div>
       </div>
     </main>
+    <div>
     <div id="databoard">
         <p id="chance">Chance left: 7</p>
         <p id="time">Time left: 20</p>
@@ -70,6 +74,7 @@
       </div>
       <div id="victory" hidden>
         <p>Congratulation, you got it! Tarot is on your side</p>
+      </div>
       </div>
     <script src="scripts/script.js"></script>
   </body>

@@ -9,6 +9,15 @@ button{
 height: 20vh;
 width: 15vh;
 }
+#Github{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position:absolute;
+    height: 10vh;
+    width: 10vh;
+}
+
 #gridContainer{
     position: relative;
     display: grid;
